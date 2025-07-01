@@ -5,7 +5,7 @@
     "types": "dist/index.d.ts",
     "scripts": {
       "dev": "next dev -p 3007",
-      "build": "next build",
+      "build": "echo 'No build step required for form builder'",      
       "start": "next start",
       "lint": "next lint"
     },

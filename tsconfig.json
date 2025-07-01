@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@assessment/core": ["packages/core/src"],
+      "@assessment/ui": ["packages/ui/src"],
+      "@assessment/data-table": ["packages/data-table/src"],
+      "@assessment/form-builder": ["packages/form-builder/src"],
+      "@assessment/blog-app": ["packages/blog-app/src"],
+      "@assessment/services": ["packages/services/src"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx"]
+}

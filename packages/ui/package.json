@@ -1,0 +1,34 @@
+{
+    "name": "@assessment/ui",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+      "build": "tsc",
+      "dev": "tsc --watch"
+    },
+    "dependencies": {
+      "react": "^18.2.0",
+      "@assessment/core": "*",
+      "classnames": "^2.3.2",
+      "tailwind-merge": "^1.14.0"
+    },
+    "peerDependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+
+
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "require": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./*": {
+        "import": "./dist/*.js",
+        "require": "./dist/*.js",
+        "types": "./dist/*.d.ts"
+      }
+    }
+  }

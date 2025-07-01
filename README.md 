@@ -1,0 +1,49 @@
+# Assessment Monorepo
+
+A comprehensive monorepo containing a blog application, data table component, and form builder built with modern web technologies.
+
+## Tech Stack
+
+### Core Technologies
+- **Monorepo Management**: Turborepo
+- **Frontend Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS
+- **Testing**: Jest + React Testing Library
+- **API**: JSONPlaceholder (mock API)
+
+### Packages
+1. **@assessment/core**
+   - Shared types and utilities
+   - Form field definitions and validation schemas
+
+2. **@assessment/ui**
+   - Reusable UI components (Button, Input, Select, etc.)
+   - Theme-able components with Tailwind
+
+3. **@assessment/data-table**
+   - Feature-rich data table component
+   - Built with TanStack Table
+   - Supports sorting, filtering, pagination
+
+4. **@assessment/form-builder**
+   - Dynamic form generator
+   - Supports various field types (text, select, radio, etc.)
+   - Conditional field rendering
+   - Zod validation integration
+
+5. **@assessment/blog-app**
+   - Blog post management
+   - Create, read, update, delete operations
+   - Infinite scroll pagination
+
+6. **@assessment/services**
+   - API service layer
+   - React Query hooks for data fetching
+   - Centralized error handling
+
+## Setup Instructions
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-repo/assessment-monorepo.git
+   cd assessment-monorepo

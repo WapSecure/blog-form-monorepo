@@ -1,0 +1,29 @@
+{
+  "name": "@assessment/blog-app",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "next dev -p 3005",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@assessment/form-builder": "*",
+    "@assessment/services": "*",
+    "@assessment/ui": "*",
+    "@hookform/resolvers": "^3.3.1",
+    "immer": "^10.1.1",
+    "react-hook-form": "^7.49.2",
+    "react-markdown": "^8.0.7",
+    "react-syntax-highlighter": "^15.5.0",
+    "zod": "^3.22.4",
+    "zustand": "^4.4.1"
+  },
+  "peerDependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

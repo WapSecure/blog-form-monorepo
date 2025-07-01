@@ -1,0 +1,36 @@
+{
+    "name": "@assessment/data-table",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "dev": "next dev -p 3006",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@assessment/core": "*",
+        "@assessment/ui": "*",
+        "@tanstack/react-table": "^8.21.3",
+        "zustand": "^4.5.7"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+
+
+    "exports": {
+        ".": {
+          "import": "./dist/index.js",
+          "require": "./dist/index.js",
+          "types": "./dist/index.d.ts"
+        },
+        "./*": {
+          "import": "./dist/*.js",
+          "require": "./dist/*.js",
+          "types": "./dist/*.d.ts"
+        }
+      }
+}
